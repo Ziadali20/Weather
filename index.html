@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+</head>
+<body>
+  <!-- Start NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+    <div class="container">
+      <a href="index.html" class="text-white">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="https://routeweather.netlify.app/images/logo@2x.png"alt="" class='w-25 me-2'>
+          <span>Weather</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contatc</a>
+          </li>
+     
+      </div>
+    </div>
+  </nav>
+  <!-- End NavBar -->
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex my-5 search-form" role="search">
+          <input class="form-control me-2" type="search" placeholder="Find your location" aria-label="Search" id="search">
+          <button class="search" onclick="search()">Search</button>
+        </div>
+        <div class="col-md-4">
+          <div class="today p-2">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tomorrow py-5 h-100 ">
+
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="afterTomorrow py-5 h-100 ">
+
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="subscribe-form"> 
+            <input class="form-control mb-2" type="search"  placeholder="Enter your E-mail to subscribe ">
+            <button class="search">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
